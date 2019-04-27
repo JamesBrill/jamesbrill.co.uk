@@ -1,3 +1,4 @@
+language: node_js
 before_deploy:
   pip install --user awscli
   npm install
