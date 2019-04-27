@@ -1,8 +1,7 @@
 language: node_js
 before_deploy:
-  pip install --user awscli
-  npm install
-  npm run build
+  - pip install --user awscli
+  - npm run build
 deploy:
   provider: script
   script: ~/.local/bin/aws s3 sync --acl public-read --sse --delete dist/ s3://jamesbrill.co.uk
