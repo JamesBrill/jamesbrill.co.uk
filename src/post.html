@@ -3,6 +3,8 @@
   <h3>{{author}}</h3>
   <h3>{{date}}></h3>
   <div>
-    {{content}}
+    {{#each content}}
+    <p>{{this}}</p>
+    {{/each}}
   </div>
 </div>
