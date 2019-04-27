@@ -1,6 +1,9 @@
 const fs = require("fs");
 const Handlebars = require("handlebars");
 
+const getPostFilename = postTitle =>
+  `${postTitle.trim().replace(/\s/g, "_")}.html`;
+
 const makeDirectory = directoryName => {
   try {
     fs.mkdirSync(directoryName, 0744);
@@ -9,7 +12,7 @@ const makeDirectory = directoryName => {
 
 const getPostLinks = posts => {
   return posts.map(post => ({
-    link: `/posts/${post.title}.html`,
+    link: `/posts/${getPostFilename(post.title)}`,
     name: post.title
   }));
 };
@@ -21,7 +24,7 @@ const compilePosts = posts => {
   const template = Handlebars.compile(postSource);
   posts.forEach(post => {
     const html = template(post);
-    fs.writeFile(`dist/posts/${post.title}.html`, html);
+    fs.writeFile(`dist/posts/${getPostFilename(post.title)}`, html);
   });
 };
 
