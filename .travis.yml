@@ -1,0 +1,10 @@
+before_deploy:
+  pip install --user awscli
+  npm install
+  npm run build
+deploy:
+  provider: script
+  script: ~/.local/bin/aws s3 sync --acl public-read --sse --delete dist/ s3://jamesbrill.co.uk
+  skip_cleanup: true
+  on:
+    branch: master
