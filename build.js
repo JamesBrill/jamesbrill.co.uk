@@ -47,7 +47,7 @@ const source = fs.readFileSync("src/index.html", "utf8");
 const template = Handlebars.compile(source);
 const postFilenames = fs.readdirSync("src/posts");
 const postLinks = getPostLinks(postFilenames);
-const context = { title: "My New Post", postLinks };
+const context = { title: "Under Construction", postLinks };
 const html = template(context);
 makeDirectory("dist");
 fs.writeFile("dist/index.html", html);
