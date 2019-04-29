@@ -35,7 +35,7 @@ console.log("Compiling index...");
 const source = fs.readFileSync("src/index.html", "utf8");
 const template = Handlebars.compile(source);
 const postLinks = getPostLinks(posts);
-const context = { title: "Work In Progress...", postLinks };
+const context = { title: "Home of James Brill (Work In Progress)", postLinks };
 const html = template(context);
 makeDirectory("dist");
 fs.writeFile("dist/index.html", html);
