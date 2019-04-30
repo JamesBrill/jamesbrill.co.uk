@@ -6,7 +6,7 @@ before_deploy:
   - npm run build
 deploy:
   provider: script
-  script: ~/.local/bin/aws s3 sync --acl public-read --sse --delete dist/ s3://jamesbrill.co.uk
+  script: ~/.local/bin/aws s3 sync --sse --acl public-read dist/ s3://jamesbrill.co.uk
   skip_cleanup: true
   on:
     branch: master
