@@ -24,7 +24,7 @@ const compilePosts = posts => {
   const template = Handlebars.compile(postSource);
   posts.forEach(post => {
     const html = template(post);
-    fs.writeFile(`dist/posts/${getPostFilename(post.title)}`, html);
+    fs.writeFileSync(`dist/posts/${getPostFilename(post.title)}`, html);
   });
 };
 
@@ -38,5 +38,5 @@ const postLinks = getPostLinks(posts);
 const context = { title: "Home of James Brill (Work In Progress)", postLinks };
 const html = template(context);
 makeDirectory("dist");
-fs.writeFile("dist/index.html", html);
+fs.writeFileSync("dist/index.html", html);
 compilePosts(posts);
