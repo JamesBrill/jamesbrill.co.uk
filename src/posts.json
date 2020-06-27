@@ -1,11 +1,11 @@
 [
   {
-    "title": "This is a test",
+    "title": "The principle of this website",
     "author": "James Brill",
-    "date": "27th April 2019",
+    "date": "27th June 2020",
     "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "I'm tired of flashy websites that fill your screen with graphics and make you download a megabyte of frameworks, images and other fluff. The focus on \"minimalism\" in web design gives you a whole lot of empty space that takes too long to load. The space that does contain actual content gets covered over by cookie banners, adverts and modals asking you for permission to send you notifications. I admire the websites like craigslist that look like arse but load the page with useful content and load it quick. It's dense with information and links, and maybe that breaks some User Experience laws. But I like that density. Saves me scrolling around for ages. If I want to find something, I just need to use my eyes, not my mouse.",
+      "It's in this spirit of craigslist that my personal website operates. A lot of my projects work with frameworks like React that make you download mountains of JavaScript, and I'll still be linking to those. But for this site itself, it'll just be raw HTML and plaintext going down the wire. It might be ugly by today's web standards, but it's simple, fast, and it gets to the damn point. No fluff here, except perhaps in my writing."
     ]
   }
 ]
