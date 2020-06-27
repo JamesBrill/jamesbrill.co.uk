@@ -1,15 +1,23 @@
-<div>
-  <h1>{{title}}</h1>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://jamesbrill.co.uk/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://jamesbrill.co.uk/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://jamesbrill.co.uk/favicons/favicon-16x16.png">
+  <link rel="manifest" href="https://jamesbrill.co.uk/favicons/site.webmanifest">
+</head>
+<body>
   <div>
-    <h1>Code Doodles</h1>
-    <a href='http://jamesbrill.co.uk/pauls-todo-list/'>Paul's Todo List (game)</a>
-    <br>
-    <a href='https://cavegen.com'>CaveGen (level editor)</a>
-    <br>
-    <a href='https://github.com/JamesBrill/react-speech-recognition'>React Speech Recognition (open source lib)</a>
-    <h1>Posts</h1>
-    {{#each postLinks}}
-    <a href={{link}}>{{name}}</a>
-    {{/each}}
+    <h1>{{title}}</h1>
+    <div>
+      <h1>Code Doodles</h1>
+      <a href='https://jamesbrill.co.uk/pauls-todo-list/'>Paul's Todo List (game)</a>
+      <br>
+      <a href='https://cavegen.com'>CaveGen (level editor)</a>
+      <br>
+      <a href='https://github.com/JamesBrill/react-speech-recognition'>React Speech Recognition (open source lib)</a>
+      <h1>Posts</h1>
+      {{#each postLinks}}
+      <a href={{link}}>{{name}}</a>
+      {{/each}}
+    </div>
   </div>
-</div>
+</body>
